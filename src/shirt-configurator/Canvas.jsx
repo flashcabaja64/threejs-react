@@ -11,7 +11,7 @@ import {
   useTexture
 } from '@react-three/drei';
 import { useSnapshot } from 'valtio';
-import { state } from './store';
+import { state } from '../store';
 
 
 export const App = ({ position = [-1, 0, 2.5], fov = 25 }) => {
@@ -110,7 +110,7 @@ function CameraRig({ children }) {
   useFrame((state, delta) => {
     easing.damp3(
       state.camera.position, 
-      [snap.intro ? -state.viewport.width / 1.2 : -0.8, 0, 2], 
+      [snap.intro ? -state.viewport.width / 1.7 : -0.8, 0, 2], 
       0.25, 
       delta
     )

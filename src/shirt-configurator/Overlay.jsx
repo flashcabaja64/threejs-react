@@ -1,7 +1,7 @@
 import { Logo } from "@pmndrs/branding";
 import { AiOutlineHighlight, AiOutlineShopping, AiFillCamera, AiOutlineArrowLeft } from "react-icons/ai";
 import { useSnapshot } from "valtio";
-import { state } from './store';
+import { state } from '../store';
 import { motion, AnimatePresence } from "framer-motion";
 
 export default function Overlay() {
